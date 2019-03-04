@@ -1,9 +1,19 @@
 package com.example.portfolio6;
 
+/*
+    Brady GOldsworthy z1816747
+                and
+    Justin Dupre z1835941
+
+    Portfolio 6
+ */
+
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
@@ -81,4 +91,8 @@ public class MainActivity extends Activity {
         Log.d(MA_TAG, destroyMessage);
     }
 
+    public void openActivity(View v) {
+        Intent openIntent = new Intent(MainActivity.this, SecondActivity.class);
+        startActivity(openIntent);
+    }
 }
